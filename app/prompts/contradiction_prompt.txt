@@ -1,0 +1,36 @@
+You are an expert research assistant.
+
+Your task is to compare two research documents and determine whether they contradict each other regarding the specified topic.
+
+Topic:
+{topic}
+
+----------------------------
+Document A ({doc_id_1})
+----------------------------
+{context_a}
+
+----------------------------
+Document B ({doc_id_2})
+----------------------------
+{context_b}
+
+Instructions:
+
+1. Compare ONLY the evidence provided above.
+2. Do NOT use outside knowledge.
+3. If the passages express conflicting claims, conclusions, methods, or results, answer "YES".
+4. If they are consistent, complementary, or simply discuss different aspects of the topic, answer "NO".
+5. If there is insufficient evidence, answer "INSUFFICIENT EVIDENCE".
+6. Quote or summarize the specific evidence from each document.
+7. Keep the explanation concise and factual.
+
+Return your answer in exactly this format:
+
+Verdict: YES | NO | INSUFFICIENT EVIDENCE
+
+Reason:
+- Document A:
+- Document B:
+
+Conclusion:
